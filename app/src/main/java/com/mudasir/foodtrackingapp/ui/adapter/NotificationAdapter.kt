@@ -27,7 +27,7 @@ class NotificationAdapter(
     }
 
     override fun onBindViewHolder(holder: NotificationViewHolder, position: Int) {
-        holder.bind(notifications[position])
+        holder.bind(notifications[position], position)
     }
 
     override fun getItemCount(): Int = notifications.size
@@ -35,7 +35,7 @@ class NotificationAdapter(
     inner class NotificationViewHolder(private val binding: ItemNotificationBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: NotificationItem) {
+        fun bind(item: NotificationItem, position: Int) {
             val context = binding.root.context
             binding.tvSenderName.text = item.senderName
             binding.tvNotificationAction.text = item.actionText
@@ -52,10 +52,7 @@ class NotificationAdapter(
 
             binding.root.setOnClickListener {
                 item.isUnread = false
-                val pos = bindingAdapterPosition
-                if (pos != RecyclerView.NO_POSITION) {
-                    notifyItemChanged(pos)
-                }
+                notifyItemChanged(position)
                 onNotificationClick(item)
             }
         }

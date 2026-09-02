@@ -26,7 +26,7 @@ class AddOnAdapter(
     }
 
     override fun onBindViewHolder(holder: AddOnViewHolder, position: Int) {
-        holder.bind(addOns[position])
+        holder.bind(addOns[position], position)
     }
 
     override fun getItemCount(): Int = addOns.size
@@ -34,7 +34,7 @@ class AddOnAdapter(
     inner class AddOnViewHolder(private val binding: ItemAddonBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(addOn: AddOn) {
+        fun bind(addOn: AddOn, position: Int) {
             binding.ivAddOnIcon.setImageResource(addOn.iconRes)
             val context = binding.root.context
 
@@ -52,10 +52,7 @@ class AddOnAdapter(
 
             binding.root.setOnClickListener {
                 addOn.isSelected = !addOn.isSelected
-                val pos = bindingAdapterPosition
-                if (pos != RecyclerView.NO_POSITION) {
-                    notifyItemChanged(pos)
-                }
+                notifyItemChanged(position)
                 onAddOnToggle(addOn)
             }
         }
