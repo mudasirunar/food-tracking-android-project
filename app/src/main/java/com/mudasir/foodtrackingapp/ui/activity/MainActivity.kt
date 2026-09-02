@@ -2,6 +2,8 @@ package com.mudasir.foodtrackingapp.ui.activity
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -16,22 +18,23 @@ import com.mudasir.foodtrackingapp.ui.fragment.HomeFragment
 import com.mudasir.foodtrackingapp.ui.fragment.NotificationsFragment
 import com.mudasir.foodtrackingapp.ui.fragment.ProfileFragment
 import com.mudasir.foodtrackingapp.ui.fragment.SearchFragment
+import java.util.ArrayDeque
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private val homeFragment = HomeFragment()
-    private val searchFragment = SearchFragment()
-    private val cartFragment = CartFragment()
-    private val notificationsFragment = NotificationsFragment()
-    private val profileFragment = ProfileFragment()
-
-    private var activeFragment: Fragment = homeFragment
-
-    enum class NavTab {
-        HOME, SEARCH, CART, NOTIFICATIONS, PROFILE
+    enum class NavTab(val tag: String) {
+        HOME("HOME"),
+        SEARCH("SEARCH"),
+        CART("CART"),
+        NOTIFICATIONS("NOTIFICATIONS"),
+        PROFILE("PROFILE")
     }
+
+    private var currentTab: NavTab = NavTab.HOME
+    private val tabBackStack = ArrayDeque<NavTab>()
+    private var backPressedTime: Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,55 +54,88 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        setupFragments(savedInstanceState)
         setupBottomNavigation()
+        setupBackNavigation()
         observeCartBadge()
+
+        if (savedInstanceState == null) {
+            switchTab(NavTab.HOME, addToHistory = false)
+        } else {
+            val savedTag = savedInstanceState.getString("ACTIVE_TAB", NavTab.HOME.name)
+            currentTab = NavTab.valueOf(savedTag)
+            updateNavSelection(currentTab)
+        }
     }
 
-    private fun setupFragments(savedInstanceState: Bundle?) {
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .add(R.id.navHostFragment, profileFragment, "PROFILE").hide(profileFragment)
-                .add(R.id.navHostFragment, notificationsFragment, "NOTIFICATIONS").hide(notificationsFragment)
-                .add(R.id.navHostFragment, cartFragment, "CART").hide(cartFragment)
-                .add(R.id.navHostFragment, searchFragment, "SEARCH").hide(searchFragment)
-                .add(R.id.navHostFragment, homeFragment, "HOME")
-                .commit()
-            activeFragment = homeFragment
-            updateNavSelection(NavTab.HOME)
-        }
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString("ACTIVE_TAB", currentTab.name)
     }
 
     private fun setupBottomNavigation() {
         binding.navHome.setOnClickListener {
-            switchFragment(homeFragment, NavTab.HOME)
+            switchTab(NavTab.HOME)
         }
 
         binding.navSearch.setOnClickListener {
-            switchFragment(searchFragment, NavTab.SEARCH)
+            switchTab(NavTab.SEARCH)
         }
 
         binding.navCart.setOnClickListener {
-            switchFragment(cartFragment, NavTab.CART)
+            switchTab(NavTab.CART)
         }
 
         binding.navNotifications.setOnClickListener {
-            switchFragment(notificationsFragment, NavTab.NOTIFICATIONS)
+            switchTab(NavTab.NOTIFICATIONS)
         }
 
         binding.navProfile.setOnClickListener {
-            switchFragment(profileFragment, NavTab.PROFILE)
+            switchTab(NavTab.PROFILE)
         }
     }
 
-    private fun switchFragment(targetFragment: Fragment, tab: NavTab) {
-        if (activeFragment != targetFragment) {
-            supportFragmentManager.beginTransaction()
-                .hide(activeFragment)
-                .show(targetFragment)
-                .commit()
-            activeFragment = targetFragment
-            updateNavSelection(tab)
+    fun switchTab(tab: NavTab, addToHistory: Boolean = true) {
+        if (currentTab == tab && supportFragmentManager.findFragmentByTag(tab.tag) != null) {
+            return
+        }
+
+        if (addToHistory && currentTab != tab) {
+            // Remove previous occurrence of tab to prevent loop cycles
+            tabBackStack.remove(tab)
+            tabBackStack.addLast(currentTab)
+        }
+
+        val transaction = supportFragmentManager.beginTransaction()
+
+        // Hide all currently added fragments
+        for (navItem in NavTab.values()) {
+            val existing = supportFragmentManager.findFragmentByTag(navItem.tag)
+            if (existing != null && existing.isAdded) {
+                transaction.hide(existing)
+            }
+        }
+
+        // Show or add the requested fragment
+        var target = supportFragmentManager.findFragmentByTag(tab.tag)
+        if (target == null) {
+            target = createFragmentForTab(tab)
+            transaction.add(R.id.navHostFragment, target, tab.tag)
+        } else {
+            transaction.show(target)
+        }
+
+        transaction.commit()
+        currentTab = tab
+        updateNavSelection(tab)
+    }
+
+    private fun createFragmentForTab(tab: NavTab): Fragment {
+        return when (tab) {
+            NavTab.HOME -> HomeFragment()
+            NavTab.SEARCH -> SearchFragment()
+            NavTab.CART -> CartFragment()
+            NavTab.NOTIFICATIONS -> NotificationsFragment()
+            NavTab.PROFILE -> ProfileFragment()
         }
     }
 
@@ -116,6 +152,30 @@ class MainActivity : AppCompatActivity() {
         binding.layoutNavCartPill.alpha = if (tab == NavTab.CART) 1.0f else 0.75f
     }
 
+    private fun setupBackNavigation() {
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                handleBackNavigation()
+            }
+        })
+    }
+
+    fun handleBackNavigation() {
+        if (tabBackStack.isNotEmpty()) {
+            val previousTab = tabBackStack.removeLast()
+            switchTab(previousTab, addToHistory = false)
+        } else if (currentTab != NavTab.HOME) {
+            switchTab(NavTab.HOME, addToHistory = false)
+        } else {
+            if (backPressedTime + 2000 > System.currentTimeMillis()) {
+                finish()
+            } else {
+                Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT).show()
+                backPressedTime = System.currentTimeMillis()
+            }
+        }
+    }
+
     private fun observeCartBadge() {
         CartRepository.cartItems.observe(this) { items ->
             val count = items.sumOf { it.quantity }
@@ -129,22 +189,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun navigateToHome() {
-        switchFragment(homeFragment, NavTab.HOME)
+        switchTab(NavTab.HOME)
     }
 
     fun navigateToSearch() {
-        switchFragment(searchFragment, NavTab.SEARCH)
+        switchTab(NavTab.SEARCH)
     }
 
     fun navigateToCart() {
-        switchFragment(cartFragment, NavTab.CART)
+        switchTab(NavTab.CART)
     }
 
     fun navigateToNotifications() {
-        switchFragment(notificationsFragment, NavTab.NOTIFICATIONS)
+        switchTab(NavTab.NOTIFICATIONS)
     }
 
     fun navigateToProfile() {
-        switchFragment(profileFragment, NavTab.PROFILE)
+        switchTab(NavTab.PROFILE)
     }
 }

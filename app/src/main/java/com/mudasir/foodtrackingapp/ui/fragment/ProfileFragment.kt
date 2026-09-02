@@ -61,7 +61,7 @@ class ProfileFragment : Fragment() {
 
     private fun setupListeners() {
         binding.btnProfileBack.setOnClickListener {
-            (activity as? MainActivity)?.navigateToHome()
+            (activity as? MainActivity)?.handleBackNavigation()
         }
 
         binding.btnProfileMenu.setOnClickListener {

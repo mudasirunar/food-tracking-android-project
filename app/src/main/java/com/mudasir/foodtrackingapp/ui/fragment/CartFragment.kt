@@ -62,11 +62,11 @@ class CartFragment : Fragment() {
 
     private fun setupListeners() {
         binding.btnCartBack.setOnClickListener {
-            (activity as? MainActivity)?.navigateToHome()
+            (activity as? MainActivity)?.handleBackNavigation()
         }
 
         binding.btnBackToMenu.setOnClickListener {
-            (activity as? MainActivity)?.navigateToHome()
+            (activity as? MainActivity)?.handleBackNavigation()
         }
 
         binding.btnClearCart.setOnClickListener {

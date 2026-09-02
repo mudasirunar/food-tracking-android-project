@@ -99,7 +99,7 @@ class SearchFragment : Fragment() {
             if (binding.etSearchInput.text.isNotEmpty()) {
                 binding.etSearchInput.text.clear()
             } else {
-                (activity as? MainActivity)?.navigateToHome()
+                (activity as? MainActivity)?.handleBackNavigation()
             }
         }
 

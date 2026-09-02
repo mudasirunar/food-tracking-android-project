@@ -102,7 +102,7 @@ class NotificationsFragment : Fragment() {
 
     private fun setupListeners() {
         binding.btnNotificationsBack.setOnClickListener {
-            (activity as? MainActivity)?.navigateToHome()
+            (activity as? MainActivity)?.handleBackNavigation()
         }
 
         binding.btnNotificationsMenu.setOnClickListener {
