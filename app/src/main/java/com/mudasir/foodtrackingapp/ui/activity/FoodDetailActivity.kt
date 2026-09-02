@@ -2,6 +2,7 @@ package com.mudasir.foodtrackingapp.ui.activity
 
 import android.os.Build
 import android.os.Bundle
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -39,15 +40,13 @@ class FoodDetailActivity : AppCompatActivity() {
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.root) { _, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            binding.btnBack.setPadding(
-                binding.btnBack.paddingLeft,
-                systemBars.top + 4,
-                binding.btnBack.paddingRight,
-                binding.btnBack.paddingBottom
-            )
+            (binding.btnBack.layoutParams as? ViewGroup.MarginLayoutParams)?.let { params ->
+                params.topMargin = systemBars.top + 12
+                binding.btnBack.layoutParams = params
+            }
             binding.layoutBottomAction.setPadding(
                 binding.layoutBottomAction.paddingLeft,
-                binding.layoutBottomAction.paddingTop,
+                12,
                 binding.layoutBottomAction.paddingRight,
                 systemBars.bottom + 12
             )

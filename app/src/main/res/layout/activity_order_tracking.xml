@@ -11,16 +11,19 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/trackingAppBar"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="wrap_content"
+        android:minHeight="64dp"
         android:background="@drawable/bg_profile_header"
         android:paddingStart="16dp"
+        android:paddingTop="12dp"
         android:paddingEnd="16dp"
+        android:paddingBottom="14dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/btnTrackingBack"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:padding="6dp"
             android:src="@drawable/ic_arrow_back_white"
@@ -30,16 +33,18 @@
 
         <TextView
             android:id="@+id/tvTrackingTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
             android:fontFamily="sans-serif-bold"
             android:text="@string/track_order_title"
             android:textColor="@color/white"
             android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/btnTrackingBack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvOrderId"
             app:layout_constraintStart_toEndOf="@+id/btnTrackingBack"
-            app:layout_constraintTop_toTopOf="@+id/btnTrackingBack" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvOrderId"

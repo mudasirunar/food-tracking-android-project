@@ -34,13 +34,13 @@ class OrderTrackingActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             binding.trackingAppBar.setPadding(
                 binding.trackingAppBar.paddingLeft,
-                systemBars.top + 4,
+                systemBars.top + 10,
                 binding.trackingAppBar.paddingRight,
-                binding.trackingAppBar.paddingBottom
+                14
             )
             binding.layoutTrackingBottomCTA.setPadding(
                 binding.layoutTrackingBottomCTA.paddingLeft,
-                binding.layoutTrackingBottomCTA.paddingTop,
+                10,
                 binding.layoutTrackingBottomCTA.paddingRight,
                 systemBars.bottom + 12
             )
