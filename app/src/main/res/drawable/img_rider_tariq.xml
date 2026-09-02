@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+  <path
+      android:fillColor="#DBEAFE"
+      android:pathData="M40,0 A40,40 0 1,0 40,80 A40,40 0 1,0 40,0 Z"/>
+  <!-- Helmet / Cap Red -->
+  <path
+      android:fillColor="#EF4444"
+      android:pathData="M24,28 C24,18 36,15 40,15 C44,15 56,18 56,28 C56,31 52,32 40,32 C28,32 24,31 24,28 Z"/>
+  <!-- Head -->
+  <path
+      android:fillColor="#E6B894"
+      android:pathData="M28,32 C28,24 52,24 52,32 C52,48 28,48 28,32 Z"/>
+  <!-- Jacket Purple -->
+  <path
+      android:fillColor="#3B1E82"
+      android:pathData="M16,80 C16,62 28,54 40,54 C52,54 64,62 64,80 Z"/>
+  <!-- Smile -->
+  <path
+      android:fillColor="#261C14"
+      android:pathData="M35,42 C38,45 42,45 45,42"
+      android:strokeWidth="1.5"
+      android:strokeColor="#261C14"
+      android:strokeLineCap="round"/>
+</vector>

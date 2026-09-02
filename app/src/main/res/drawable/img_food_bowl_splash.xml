@@ -1,0 +1,95 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+  <!-- Outer Dark Bowl Border -->
+  <path
+      android:fillColor="#1B1924"
+      android:pathData="M100,10 A90,90 0 1,0 100,190 A90,90 0 1,0 100,10 Z"/>
+  <!-- Bowl Inner Base -->
+  <path
+      android:fillColor="#2D2B3A"
+      android:pathData="M100,18 A82,82 0 1,0 100,182 A82,82 0 1,0 100,18 Z"/>
+  <!-- White Rice Bed Base -->
+  <path
+      android:fillColor="#F8FAFC"
+      android:pathData="M100,26 A74,74 0 1,0 100,174 A74,74 0 1,0 100,26 Z"/>
+  
+  <!-- Section 1: Fresh Broccoli Greens (Bottom Left) -->
+  <path
+      android:fillColor="#15803D"
+      android:pathData="M55,100 C40,110 38,135 50,150 C65,165 90,160 95,145 C100,130 90,110 75,105 Z"/>
+  <path
+      android:fillColor="#22C55E"
+      android:pathData="M60,115 C52,120 50,135 58,142 C68,150 82,146 85,138 C88,128 80,118 70,116 Z"/>
+  <path
+      android:fillColor="#16A34A"
+      android:pathData="M42,128 C38,135 42,145 50,146 C56,147 60,140 58,132 Z"/>
+
+  <!-- Section 2: Shredded Carrots (Top Right) -->
+  <path
+      android:fillColor="#F97316"
+      android:pathData="M110,35 C130,40 155,55 160,75 C165,95 150,110 135,110 C120,110 110,95 105,75 C100,55 102,40 110,35 Z"/>
+  <path
+      android:fillColor="#EA580C"
+      android:pathData="M120,48 L150,70 M128,42 L158,62 M115,60 L145,82 M122,72 L152,90"
+      android:strokeWidth="3"
+      android:strokeColor="#EA580C"
+      android:strokeLineCap="round"/>
+
+  <!-- Section 3: Salmon / Sausage Slices (Left) -->
+  <path
+      android:fillColor="#FB7185"
+      android:pathData="M38,70 A14,14 0 1,0 66,70 A14,14 0 1,0 38,70 Z"/>
+  <path
+      android:fillColor="#FDA4AF"
+      android:pathData="M43,70 A9,9 0 1,0 61,70 A9,9 0 1,0 43,70 Z"/>
+  
+  <path
+      android:fillColor="#FB7185"
+      android:pathData="M52,90 A14,14 0 1,0 80,90 A14,14 0 1,0 52,90 Z"/>
+  <path
+      android:fillColor="#FDA4AF"
+      android:pathData="M57,90 A9,9 0 1,0 75,90 A9,9 0 1,0 57,90 Z"/>
+
+  <path
+      android:fillColor="#FB7185"
+      android:pathData="M35,95 A13,13 0 1,0 61,95 A13,13 0 1,0 35,95 Z"/>
+
+  <!-- Section 4: Sweet Corn & Avocado (Top Left) -->
+  <path
+      android:fillColor="#EAB308"
+      android:pathData="M65,40 C80,35 95,45 98,60 C100,75 88,88 75,85 C62,82 55,70 58,55 Z"/>
+  <path
+      android:fillColor="#FACC15"
+      android:pathData="M72,48 A4,4 0 1,0 80,48 A4,4 0 1,0 72,48 Z"/>
+  <path
+      android:fillColor="#FACC15"
+      android:pathData="M84,55 A4,4 0 1,0 92,55 A4,4 0 1,0 84,55 Z"/>
+  <path
+      android:fillColor="#FACC15"
+      android:pathData="M70,62 A4,4 0 1,0 78,62 A4,4 0 1,0 70,62 Z"/>
+
+  <!-- Section 5: Bean Sprouts & Sesame (Bottom Right) -->
+  <path
+      android:fillColor="#E2E8F0"
+      android:pathData="M110,120 C125,105 150,110 160,125 C170,140 160,165 140,168 C120,170 105,150 105,135 Z"/>
+  <path
+      android:fillColor="#CBD5E1"
+      android:strokeWidth="2.5"
+      android:strokeColor="#94A3B8"
+      android:strokeLineCap="round"
+      android:pathData="M120,128 C130,132 142,140 148,152 M130,122 C140,128 152,136 156,145"/>
+
+  <!-- Center Egg with soft yolk -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M88,98 C88,88 112,88 112,98 C112,112 88,112 88,98 Z"/>
+  <path
+      android:fillColor="#F59E0B"
+      android:pathData="M94,98 A6,6 0 1,0 106,98 A6,6 0 1,0 94,98 Z"/>
+  <path
+      android:fillColor="#FEF08A"
+      android:pathData="M96,96 A2,2 0 1,0 100,96 A2,2 0 1,0 96,96 Z"/>
+</vector>

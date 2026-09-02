@@ -1,0 +1,65 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="140dp"
+    android:height="140dp"
+    android:viewportWidth="140"
+    android:viewportHeight="140">
+  <!-- Outer Crust Circle -->
+  <path
+      android:fillColor="#D97706"
+      android:pathData="M70,10 A60,60 0 1,0 70,130 A60,60 0 1,0 70,10 Z"/>
+  <!-- Inner Cheesy Surface -->
+  <path
+      android:fillColor="#FBBF24"
+      android:pathData="M70,18 A52,52 0 1,0 70,122 A52,52 0 1,0 70,18 Z"/>
+  
+  <!-- Melted Golden Spots -->
+  <path
+      android:fillColor="#F59E0B"
+      android:pathData="M50,40 A12,10 20 1,0 65,52 A12,10 20 1,0 50,40 Z
+                       M85,75 A14,12 -15 1,0 102,88 A14,12 -15 1,0 85,75 Z
+                       M42,85 A10,12 35 1,0 55,98 A10,12 35 1,0 42,85 Z"/>
+
+  <!-- Pepperoni Slices -->
+  <path
+      android:fillColor="#DC2626"
+      android:pathData="M45,45 A10,10 0 1,0 65,45 A10,10 0 1,0 45,45 Z"/>
+  <path
+      android:fillColor="#991B1B"
+      android:pathData="M48,45 A7,7 0 1,0 62,45 A7,7 0 1,0 48,45 Z"/>
+
+  <path
+      android:fillColor="#DC2626"
+      android:pathData="M78,35 A10,10 0 1,0 98,35 A10,10 0 1,0 78,35 Z"/>
+  <path
+      android:fillColor="#991B1B"
+      android:pathData="M81,35 A7,7 0 1,0 95,35 A7,7 0 1,0 81,35 Z"/>
+
+  <path
+      android:fillColor="#DC2626"
+      android:pathData="M65,70 A11,11 0 1,0 87,70 A11,11 0 1,0 65,70 Z"/>
+  <path
+      android:fillColor="#991B1B"
+      android:pathData="M68,70 A8,8 0 1,0 84,70 A8,8 0 1,0 68,70 Z"/>
+
+  <path
+      android:fillColor="#DC2626"
+      android:pathData="M40,78 A9,9 0 1,0 58,78 A9,9 0 1,0 40,78 Z"/>
+  <path
+      android:fillColor="#991B1B"
+      android:pathData="M43,78 A6,6 0 1,0 55,78 A6,6 0 1,0 43,78 Z"/>
+
+  <path
+      android:fillColor="#DC2626"
+      android:pathData="M85,90 A10,10 0 1,0 105,90 A10,10 0 1,0 85,90 Z"/>
+  <path
+      android:fillColor="#991B1B"
+      android:pathData="M88,90 A7,7 0 1,0 102,90 A7,7 0 1,0 88,90 Z"/>
+
+  <!-- Basil / Oregano Leaves -->
+  <path
+      android:fillColor="#15803D"
+      android:pathData="M60,58 C62,54 68,54 70,58 C72,62 66,64 60,58 Z
+                       M92,58 C94,54 100,54 102,58 C104,62 98,64 92,58 Z
+                       M52,68 C54,64 60,64 62,68 C64,72 58,74 52,68 Z
+                       M72,98 C74,94 80,94 82,98 C84,102 78,104 72,98 Z"/>
+</vector>

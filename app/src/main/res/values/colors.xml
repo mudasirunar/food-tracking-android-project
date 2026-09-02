@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Purple Colors -->
+    <color name="purple_primary">#3B1E82</color>
+    <color name="purple_primary_variant">#2B1266</color>
+    <color name="purple_light">#703DE8</color>
+    <color name="purple_gradient_start">#8C45FF</color>
+    <color name="purple_gradient_end">#5512DB</color>
+    <color name="purple_soft_bg">#F2EDFC</color>
+    <color name="purple_accent_tint">#EBE5FA</color>
+
+    <!-- Base Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Neutral & Backgrounds -->
+    <color name="bg_screen">#FAFAFC</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_input">#F3F4F6</color>
+    <color name="bg_search">#F3F4F6</color>
+    <color name="bg_chip">#F5F5F7</color>
+    <color name="border_light">#E5E7EB</color>
+    <color name="divider">#F0F0F2</color>
+
+    <!-- Typography -->
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_white_secondary">#D8B4FE</color>
+
+    <!-- Accents & Functional -->
+    <color name="accent_gold">#EAB308</color>
+    <color name="accent_gold_light">#FEF08A</color>
+    <color name="accent_rating">#F59E0B</color>
+    <color name="status_green">#10B981</color>
+    <color name="status_green_light">#D1FAE5</color>
+    <color name="status_red">#EF4444</color>
+    <color name="status_red_light">#FEE2E2</color>
+    <color name="status_blue">#3B82F6</color>
+    <color name="status_blue_light">#DBEAFE</color>
+
+    <!-- Notifications unread highlight -->
+    <color name="notification_unread_bg">#EDF5FE</color>
+    <color name="notification_read_bg">#FFFFFF</color>
+</resources>

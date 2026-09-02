@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <!-- Cheese Slice (Square isometric) -->
+  <path
+      android:fillColor="#FBBF24"
+      android:pathData="M10,18 L34,10 L38,30 L14,38 Z"/>
+  <!-- Cheese Side / Depth -->
+  <path
+      android:fillColor="#F59E0B"
+      android:pathData="M14,38 L38,30 L38,34 L14,42 Z"/>
+  <!-- Holes in Cheese -->
+  <path
+      android:fillColor="#F59E0B"
+      android:pathData="M20,22 A2.5,2 30 1,0 24,20 A2.5,2 30 1,0 20,22 Z
+                       M28,26 A3,2 -20 1,0 33,24 A3,2 -20 1,0 28,26 Z
+                       M18,30 A2,1.5 10 1,0 21,29 A2,1.5 10 1,0 18,30 Z"/>
+</vector>

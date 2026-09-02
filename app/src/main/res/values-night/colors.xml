@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Mode Colors -->
+    <color name="bg_screen">#12111A</color>
+    <color name="bg_card">#1E1B29</color>
+    <color name="bg_input">#282438</color>
+    <color name="bg_search">#282438</color>
+    <color name="bg_chip">#282438</color>
+    <color name="border_light">#35304C</color>
+    <color name="divider">#2A263D</color>
+
+    <color name="text_primary">#F3F4F6</color>
+    <color name="text_secondary">#9CA3AF</color>
+    <color name="text_hint">#6B7280</color>
+
+    <color name="notification_unread_bg">#232038</color>
+    <color name="notification_read_bg">#1E1B29</color>
+</resources>

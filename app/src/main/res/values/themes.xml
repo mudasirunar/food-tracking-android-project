@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodTrackingApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_light</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/purple_primary</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">@color/purple_primary</item>
+        <item name="android:windowBackground">@color/bg_screen</item>
+    </style>
+
+    <style name="Theme.FoodTrackingApp" parent="Base.Theme.FoodTrackingApp" />
+
+    <style name="Theme.FoodTrackingApp.Splash" parent="Theme.FoodTrackingApp">
+        <item name="android:statusBarColor">@color/purple_primary</item>
+        <item name="android:navigationBarColor">@color/purple_primary</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+    
+    <style name="Theme.FoodTrackingApp.LightStatusBar" parent="Theme.FoodTrackingApp">
+        <item name="android:statusBarColor">@color/bg_screen</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">@color/purple_primary</item>
+    </style>
+</resources>

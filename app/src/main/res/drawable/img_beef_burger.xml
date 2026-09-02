@@ -1,0 +1,65 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportWidth="160"
+    android:viewportHeight="160">
+  <!-- Top Bun -->
+  <path
+      android:fillColor="#E28725"
+      android:pathData="M25,65 C25,32 50,18 80,18 C110,18 135,32 135,65 C135,68 132,70 128,70 L32,70 C28,70 25,68 25,65 Z"/>
+  <!-- Top Bun Highlight -->
+  <path
+      android:fillColor="#F4A242"
+      android:pathData="M38,48 C48,30 70,24 88,24 C104,24 120,30 124,42 C115,32 95,28 80,28 C62,28 46,34 38,48 Z"/>
+  
+  <!-- Sesame Seeds -->
+  <path
+      android:fillColor="#FEF3C7"
+      android:pathData="M52,38 A2.5,1.5 30 1,0 55,36 A2.5,1.5 30 1,0 52,38 Z
+                       M75,30 A2.5,1.5 -20 1,0 78,28 A2.5,1.5 -20 1,0 75,30 Z
+                       M98,34 A2.5,1.5 45 1,0 101,32 A2.5,1.5 45 1,0 98,34 Z
+                       M64,48 A2.5,1.5 -40 1,0 67,46 A2.5,1.5 -40 1,0 64,48 Z
+                       M88,44 A2.5,1.5 15 1,0 91,42 A2.5,1.5 15 1,0 88,44 Z
+                       M112,46 A2.5,1.5 -30 1,0 115,44 A2.5,1.5 -30 1,0 112,46 Z"/>
+
+  <!-- Lettuce Layer (Wavy Green) -->
+  <path
+      android:fillColor="#22C55E"
+      android:pathData="M18,72 C22,65 28,75 35,70 C42,65 48,76 56,70 C64,64 72,75 80,69 C88,63 96,75 104,69 C112,63 118,74 126,69 C134,64 140,73 144,70 C146,75 142,80 138,80 L22,80 C18,80 16,75 18,72 Z"/>
+  <path
+      android:fillColor="#15803D"
+      android:pathData="M24,76 C30,73 36,78 44,74 C52,70 60,78 70,73 C80,68 90,78 100,73 C110,68 120,77 130,73 L134,78 L26,78 Z"/>
+
+  <!-- Tomato Slices Layer -->
+  <path
+      android:fillColor="#EF4444"
+      android:pathData="M22,80 C22,78 26,76 30,76 L130,76 C134,76 138,78 138,80 L136,88 L24,88 Z"/>
+  <path
+      android:fillColor="#DC2626"
+      android:pathData="M35,80 L65,80 L63,86 L37,86 Z M75,80 L125,80 L123,86 L77,86 Z"/>
+
+  <!-- Melted Cheese Layer (Corners drooping) -->
+  <path
+      android:fillColor="#FBBF24"
+      android:pathData="M18,88 L142,88 L138,98 L118,102 L105,94 L90,108 L76,95 L58,105 L45,95 L22,98 Z"/>
+
+  <!-- Juicy Beef Patty Layer -->
+  <path
+      android:fillColor="#582914"
+      android:pathData="M20,95 C20,92 24,90 28,90 L132,90 C136,90 140,92 140,95 L138,114 C138,118 134,120 130,120 L30,120 C26,120 22,118 22,114 Z"/>
+  <!-- Grilled Texture on Patty -->
+  <path
+      android:fillColor="#3D1A0B"
+      android:pathData="M35,98 L50,112 M65,96 L80,114 M95,96 L110,114 M120,98 L130,110"
+      android:strokeWidth="3.5"
+      android:strokeColor="#3D1A0B"
+      android:strokeLineCap="round"/>
+
+  <!-- Bottom Bun -->
+  <path
+      android:fillColor="#E28725"
+      android:pathData="M28,120 L132,120 C136,120 138,122 138,126 C138,140 120,146 80,146 C40,146 22,140 22,126 C22,122 24,120 28,120 Z"/>
+  <path
+      android:fillColor="#F4A242"
+      android:pathData="M35,122 L125,122 C120,128 102,132 80,132 C58,132 40,128 35,122 Z"/>
+</vector>

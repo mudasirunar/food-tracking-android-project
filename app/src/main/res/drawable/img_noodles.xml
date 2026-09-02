@@ -1,0 +1,51 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+  <!-- Ceramic Bowl -->
+  <path
+      android:fillColor="#1E293B"
+      android:pathData="M60,20 C85,20 105,32 105,50 C105,80 85,105 60,105 C35,105 15,80 15,50 C15,32 35,20 60,20 Z"/>
+  <!-- Bowl Inner Soup / Base -->
+  <path
+      android:fillColor="#78350F"
+      android:pathData="M60,26 C82,26 98,36 98,48 C98,60 82,70 60,70 C38,70 22,60 22,48 C22,36 38,26 60,26 Z"/>
+  
+  <!-- Swirly Noodles -->
+  <path
+      android:fillColor="#FBBF24"
+      android:strokeWidth="3.5"
+      android:strokeColor="#F59E0B"
+      android:strokeLineCap="round"
+      android:pathData="M32,45 C38,38 48,52 56,42 C64,32 74,48 82,40 C88,34 94,44 88,52 C82,60 70,50 60,56 C50,62 40,50 32,45 Z"/>
+  <path
+      android:fillColor="#FDE68A"
+      android:strokeWidth="3"
+      android:strokeColor="#FBBF24"
+      android:strokeLineCap="round"
+      android:pathData="M38,52 C45,46 54,60 66,50 C76,42 86,55 78,62 C70,68 52,62 42,60"/>
+
+  <!-- Greens / Scallions -->
+  <path
+      android:fillColor="#22C55E"
+      android:pathData="M45,35 A4,4 0 1,0 53,35 A4,4 0 1,0 45,35 Z
+                       M72,36 A4,4 0 1,0 80,36 A4,4 0 1,0 72,36 Z
+                       M58,46 A3.5,3.5 0 1,0 65,46 A3.5,3.5 0 1,0 58,46 Z"/>
+
+  <!-- Half Boiled Egg -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M48,55 C48,48 60,48 60,55 C60,64 48,64 48,55 Z"/>
+  <path
+      android:fillColor="#EA580C"
+      android:pathData="M51,55 A3.5,3.5 0 1,0 58,55 A3.5,3.5 0 1,0 51,55 Z"/>
+
+  <!-- Wooden Chopsticks -->
+  <path
+      android:fillColor="#9A3412"
+      android:strokeWidth="3"
+      android:strokeColor="#9A3412"
+      android:strokeLineCap="round"
+      android:pathData="M18,30 L95,85 M24,25 L102,80"/>
+</vector>

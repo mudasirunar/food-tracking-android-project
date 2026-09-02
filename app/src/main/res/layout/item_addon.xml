@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutAddOnContainer"
+    android:layout_width="72dp"
+    android:layout_height="72dp"
+    android:layout_marginEnd="12dp">
+
+    <LinearLayout
+        android:id="@+id/cardAddOn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_addon_item"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivAddOnIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            tools:src="@drawable/img_addon_cheese" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/badgeAddOnAction"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/bg_badge_add_green">
+
+        <ImageView
+            android:id="@+id/ivBadgeIcon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_add"
+            app:tint="@color/white" />
+    </FrameLayout>
+</FrameLayout>

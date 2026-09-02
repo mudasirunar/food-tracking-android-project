@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Food Tracking App</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_title">Enjoy\nYour Food!</string>
+    <string name="get_started">Get Started</string>
+    
+    <!-- Home Screen -->
+    <string name="menu_title">Menu</string>
+    <string name="search_hint">Search...</string>
+    <string name="promotions">Promotions</string>
+    <string name="todays_offer">Today\'s Offer</string>
+    <string name="free_box_of_fries">Free box of Fries</string>
+    <string name="promo_condition">on all orders above $150</string>
+    <string name="popular">Popular</string>
+    
+    <!-- Categories -->
+    <string name="cat_all">All</string>
+    <string name="cat_burger">Burger</string>
+    <string name="cat_pizza">Pizza</string>
+    <string name="cat_chicken">Chicken</string>
+    <string name="cat_drinks">Drinks</string>
+    <string name="cat_noodles">Noodles</string>
+    
+    <!-- Food Detail -->
+    <string name="add_on">Add On</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="added_to_cart">Added to cart successfully!</string>
+    
+    <!-- Cart -->
+    <string name="items_in_cart">Items in cart</string>
+    <string name="order_instructions">Order Instructions</string>
+    <string name="order_instructions_hint">e.g. Please leave at door, extra napkins, no pickles…</string>
+    <string name="total_label">Total:</string>
+    <string name="checkout">Checkout</string>
+    <string name="back_to_menu">Back to Menu</string>
+    <string name="cart_empty">Your cart is empty</string>
+    
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="user_name">Ahmed Khan</string>
+    <string name="user_phone">+92 3123456789</string>
+    <string name="user_email">ahmed@gmail.com</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="order_history">Food Tracking &amp; Orders</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Log out</string>
+    
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="tab_all">All</string>
+    <string name="tab_unread">Unread</string>
+    
+    <!-- Search -->
+    <string name="cancel">Cancel</string>
+    <string name="recent_queries">Recent Queries</string>
+    <string name="clear_recent_queries">Clear Recent Queries</string>
+    <string name="no_results">No matching food items found</string>
+    
+    <!-- Order Tracking (Extra Food Tracking Feature) -->
+    <string name="track_order_title">Live Food Tracking</string>
+    <string name="order_id_label">Order #FT-8924</string>
+    <string name="estimated_delivery">Estimated Delivery Time</string>
+    <string name="eta_time">18 - 22 mins</string>
+    <string name="step_placed_title">Order Placed</string>
+    <string name="step_placed_desc">We have received your order</string>
+    <string name="step_preparing_title">Kitchen Preparing</string>
+    <string name="step_preparing_desc">Chef is crafting your delicious meal</string>
+    <string name="step_delivering_title">On The Way</string>
+    <string name="step_delivering_desc">Rider is heading to your location</string>
+    <string name="step_delivered_title">Delivered</string>
+    <string name="step_delivered_desc">Enjoy your fresh and delicious meal!</string>
+    
+    <!-- Nutrition / Calorie Tracking -->
+    <string name="nutrition_summary">Meal Calorie &amp; Nutrition Breakdown</string>
+    <string name="calories_unit">kcal</string>
+    <string name="delivery_partner">Delivery Partner</string>
+    <string name="rider_name">Tariq Mahmood</string>
+    <string name="rider_rating">4.9 ★ (1,240 deliveries)</string>
+    <string name="call_rider">Call</string>
+    <string name="message_rider">Message</string>
+    <string name="delivery_address">Delivering to: 124 Sunset Boulevard, Apt 4B</string>
+</resources>

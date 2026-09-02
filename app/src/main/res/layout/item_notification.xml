@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardNotification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <View
+            android:id="@+id/viewUnreadDot"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/bg_badge_add_green"
+            android:backgroundTint="@color/status_blue"
+            app:layout_constraintBottom_toBottomOf="@+id/ivSenderAvatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivSenderAvatar" />
+
+        <ImageView
+            android:id="@+id/ivSenderAvatar"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/viewUnreadDot"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/img_avatar_ali" />
+
+        <TextView
+            android:id="@+id/tvSenderName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-bold"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvTimeAgo"
+            app:layout_constraintStart_toEndOf="@+id/ivSenderAvatar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Ali Khan" />
+
+        <TextView
+            android:id="@+id/tvNotificationAction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvTimeAgo"
+            app:layout_constraintStart_toEndOf="@+id/ivSenderAvatar"
+            app:layout_constraintTop_toBottomOf="@+id/tvSenderName"
+            tools:text="Replied to your message" />
+
+        <TextView
+            android:id="@+id/tvTimeAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_hint"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="3m" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

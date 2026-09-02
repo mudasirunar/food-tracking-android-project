@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <!-- Wavy Crispy Bacon Strip -->
+  <path
+      android:fillColor="#991B1B"
+      android:pathData="M8,18 C14,14 18,24 24,18 C30,12 34,22 40,16 L42,24 C36,30 32,20 26,26 C20,32 16,22 10,28 Z"/>
+  <path
+      android:fillColor="#FCA5A5"
+      android:pathData="M10,21 C15,18 18,25 24,20 C30,15 34,23 40,19 L41,22 C35,26 31,18 25,23 C19,28 15,20 9,25 Z"/>
+</vector>

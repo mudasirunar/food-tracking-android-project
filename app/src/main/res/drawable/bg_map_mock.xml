@@ -1,0 +1,58 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="180dp"
+    android:viewportWidth="360"
+    android:viewportHeight="180">
+  <!-- Map Base (Soft Grid Tone) -->
+  <path
+      android:fillColor="#E8ECF2"
+      android:pathData="M0,0 H360 V180 H0 Z"/>
+  
+  <!-- Parks / Green zones -->
+  <path
+      android:fillColor="#D1FAE5"
+      android:pathData="M20,20 H100 V70 H20 Z M260,110 H340 V160 H260 Z"/>
+
+  <!-- City Roads / Grid Streets -->
+  <path
+      android:strokeWidth="10"
+      android:strokeColor="#FFFFFF"
+      android:pathData="M0,50 H360 M0,130 H360 M80,0 V180 M240,0 V180 M160,0 V180"/>
+  
+  <path
+      android:strokeWidth="6"
+      android:strokeColor="#FFFFFF"
+      android:pathData="M0,90 H360 M300,0 V180 M40,0 V180"/>
+
+  <!-- Live Delivery Route (Vibrant Purple Dashed / Glowing Line) -->
+  <path
+      android:strokeWidth="4"
+      android:strokeColor="#3B1E82"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round"
+      android:pathData="M60,50 L160,50 L160,130 L280,130"/>
+
+  <!-- Restaurant Pin (Start point) -->
+  <path
+      android:fillColor="#10B981"
+      android:pathData="M60,38 A8,8 0 1,0 60,54 A8,8 0 1,0 60,38 Z"/>
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M57,43 L63,43 L63,49 L57,49 Z"/>
+
+  <!-- Moving Rider Icon (Midpoint: 160, 90) -->
+  <path
+      android:fillColor="#3B1E82"
+      android:pathData="M160,78 A12,12 0 1,0 160,102 A12,12 0 1,0 160,78 Z"/>
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M154,86 H166 V94 H154 Z"/>
+
+  <!-- Destination Pin (Customer location) -->
+  <path
+      android:fillColor="#EF4444"
+      android:pathData="M280,118 A8,8 0 1,0 280,134 A8,8 0 1,0 280,118 Z"/>
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M277,123 L283,123 L280,129 Z"/>
+</vector>

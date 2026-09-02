@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <!-- Sauce Bottle Cap -->
+  <path
+      android:fillColor="#E2E8F0"
+      android:pathData="M22,8 L26,8 L26,12 L22,12 Z"/>
+  <path
+      android:fillColor="#EF4444"
+      android:pathData="M23,4 L25,4 L25,8 L23,8 Z"/>
+  <!-- Bottle Neck -->
+  <path
+      android:fillColor="#DC2626"
+      android:pathData="M21,12 L27,12 L28,18 L20,18 Z"/>
+  <!-- Bottle Body -->
+  <path
+      android:fillColor="#EF4444"
+      android:pathData="M18,18 C16,22 16,36 17,40 C18,42 30,42 31,40 C32,36 32,22 30,18 Z"/>
+  <!-- Label -->
+  <path
+      android:fillColor="#FEF3C7"
+      android:pathData="M18,24 L30,24 L30,34 L18,34 Z"/>
+  <path
+      android:fillColor="#DC2626"
+      android:pathData="M22,26 L26,26 L26,32 L22,32 Z"/>
+</vector>

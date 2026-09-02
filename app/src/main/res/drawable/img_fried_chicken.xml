@@ -1,0 +1,55 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="140dp"
+    android:height="140dp"
+    android:viewportWidth="140"
+    android:viewportHeight="140">
+  <!-- Bucket / Basket Shadow -->
+  <path
+      android:fillColor="#FEF3C7"
+      android:pathData="M30,110 A40,15 0 1,0 110,110 A40,15 0 1,0 30,110 Z"/>
+
+  <!-- Crispy Drumstick 1 (Left) -->
+  <!-- Bone -->
+  <path
+      android:fillColor="#E2E8F0"
+      android:pathData="M35,95 L22,112 A5,5 0 1,1 15,105 L28,88 Z"/>
+  <path
+      android:fillColor="#CBD5E1"
+      android:pathData="M18,102 A4,4 0 1,0 24,112 A4,4 0 1,0 18,102 Z"/>
+  <!-- Crispy Meat -->
+  <path
+      android:fillColor="#B45309"
+      android:pathData="M30,85 C22,70 30,45 50,42 C68,40 76,60 68,80 C62,92 40,95 30,85 Z"/>
+  <path
+      android:fillColor="#D97706"
+      android:pathData="M34,80 C28,68 34,50 48,46 C60,44 68,58 62,74 C58,82 42,88 34,80 Z"/>
+
+  <!-- Crispy Drumstick 2 (Right) -->
+  <!-- Bone -->
+  <path
+      android:fillColor="#E2E8F0"
+      android:pathData="M105,95 L118,112 A5,5 0 1,0 125,105 L112,88 Z"/>
+  <!-- Crispy Meat -->
+  <path
+      android:fillColor="#B45309"
+      android:pathData="M110,85 C118,70 110,45 90,42 C72,40 64,60 72,80 C78,92 100,95 110,85 Z"/>
+  <path
+      android:fillColor="#D97706"
+      android:pathData="M106,80 C112,68 106,50 92,46 C80,44 72,58 78,74 C82,82 98,88 106,80 Z"/>
+
+  <!-- Golden Crispy Drumstick 3 (Center Foreground) -->
+  <path
+      android:fillColor="#92400E"
+      android:pathData="M48,95 C40,75 52,50 72,48 C92,46 102,70 94,92 C88,105 58,108 48,95 Z"/>
+  <path
+      android:fillColor="#F59E0B"
+      android:pathData="M52,90 C46,74 56,54 72,52 C88,50 96,70 90,88 C84,98 60,100 52,90 Z"/>
+  <!-- Crispy Flakes Dots -->
+  <path
+      android:fillColor="#B45309"
+      android:pathData="M60,65 A2.5,2.5 0 1,0 65,65 A2.5,2.5 0 1,0 60,65 Z
+                       M78,60 A2.5,2.5 0 1,0 83,60 A2.5,2.5 0 1,0 78,60 Z
+                       M70,78 A3,3 0 1,0 76,78 A3,3 0 1,0 70,78 Z
+                       M82,74 A2.5,2.5 0 1,0 87,74 A2.5,2.5 0 1,0 82,74 Z
+                       M58,80 A2.5,2.5 0 1,0 63,80 A2.5,2.5 0 1,0 58,80 Z"/>
+</vector>

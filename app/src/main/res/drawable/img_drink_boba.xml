@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+  <!-- Drink Cup -->
+  <path
+      android:fillColor="#E0F2FE"
+      android:pathData="M30,35 L40,110 C40,114 44,116 48,116 L72,116 C76,116 80,114 80,110 L90,35 Z"/>
+  <!-- Liquid / Juice (Berry Purple / Pink) -->
+  <path
+      android:fillColor="#EC4899"
+      android:pathData="M32,45 L40,108 C40,112 44,114 48,114 L72,114 C76,114 80,112 80,108 L88,45 Z"/>
+  <path
+      android:fillColor="#F472B6"
+      android:pathData="M32,45 C45,40 75,50 88,45 L86,60 C75,65 45,55 34,60 Z"/>
+  <!-- Cup Lid -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M25,30 C25,26 30,24 60,24 C90,24 95,26 95,30 L93,36 L27,36 Z"/>
+  <!-- Straw (Purple) -->
+  <path
+      android:fillColor="#3B1E82"
+      android:pathData="M62,6 L56,6 L50,30 L56,30 Z"/>
+  <!-- Boba Pearls -->
+  <path
+      android:fillColor="#3B1E82"
+      android:pathData="M48,98 A5,5 0 1,0 58,98 A5,5 0 1,0 48,98 Z
+                       M64,95 A5,5 0 1,0 74,95 A5,5 0 1,0 64,95 Z
+                       M54,84 A5,5 0 1,0 64,84 A5,5 0 1,0 54,84 Z
+                       M44,80 A5,5 0 1,0 54,80 A5,5 0 1,0 44,80 Z
+                       M68,82 A5,5 0 1,0 78,82 A5,5 0 1,0 68,82 Z"/>
+</vector>

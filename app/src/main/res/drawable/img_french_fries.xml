@@ -1,0 +1,56 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+  <!-- French Fries Sticks Sprouting Out -->
+  <!-- Stick 1 -->
+  <path
+      android:fillColor="#FBBF24"
+      android:pathData="M35,60 L42,15 L50,16 L43,60 Z"/>
+  <path
+      android:fillColor="#F59E0B"
+      android:pathData="M35,60 L42,15 L45,15 L38,60 Z"/>
+  
+  <!-- Stick 2 -->
+  <path
+      android:fillColor="#FCD34D"
+      android:pathData="M48,55 L58,10 L66,12 L56,55 Z"/>
+  <path
+      android:fillColor="#F59E0B"
+      android:pathData="M48,55 L58,10 L61,10 L51,55 Z"/>
+
+  <!-- Stick 3 (Center Tall) -->
+  <path
+      android:fillColor="#FBBF24"
+      android:pathData="M58,55 L70,8 L78,10 L66,55 Z"/>
+  <path
+      android:fillColor="#F59E0B"
+      android:pathData="M58,55 L70,8 L73,9 L61,55 Z"/>
+
+  <!-- Stick 4 -->
+  <path
+      android:fillColor="#FCD34D"
+      android:pathData="M68,55 L85,18 L93,21 L76,55 Z"/>
+  <path
+      android:fillColor="#F59E0B"
+      android:pathData="M68,55 L85,18 L88,19 L71,55 Z"/>
+
+  <!-- Stick 5 (Right) -->
+  <path
+      android:fillColor="#FBBF24"
+      android:pathData="M78,60 L98,28 L104,33 L84,60 Z"/>
+
+  <!-- Red Fries Container / Carton -->
+  <path
+      android:fillColor="#EF4444"
+      android:pathData="M25,52 C35,62 85,62 95,52 L88,110 C88,114 84,116 80,116 L40,116 C36,116 32,114 32,110 Z"/>
+  <path
+      android:fillColor="#DC2626"
+      android:pathData="M25,52 C32,58 45,60 55,60 L48,116 L40,116 C36,116 32,114 32,110 Z"/>
+
+  <!-- Golden Arc Emblem on Box -->
+  <path
+      android:fillColor="#FBBF24"
+      android:pathData="M52,85 C52,75 58,70 60,70 C62,70 68,75 68,85 L64,85 C64,78 61,74 60,74 C59,74 56,78 56,85 Z"/>
+</vector>
